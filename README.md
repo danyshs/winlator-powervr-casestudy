@@ -93,6 +93,13 @@ Winlator's own Test Direct3D shares the D3D12 failure:
 
 [TIMELINE.md](TIMELINE.md) shows the pace, day by day.
 
+## Acknowledgements
+
+Thanks to [BrunoDev](https://github.com/brunodev85) for creating
+[Winlator](https://github.com/brunodev85/winlator), maintaining it, and releasing it as open
+source. None of this work would exist without it. Thanks also to the Wine, Box64, Mesa and
+vkd3d-proton projects it builds on.
+
 ## License
 
 All rights reserved. Published for review only.
