@@ -13,7 +13,7 @@ Developed with AI-assisted tooling; the investigation, decisions and review are 
 
 ## The chain
 
-```
+```text
 game ─ OpenGL ──> Wine + Box64 ──> Mesa Zink (GL on Vulkan) ──┐
 game ─ D3D12  ──> vkd3d-proton ──> winevulkan ─────────────────┤
                                                                 v
@@ -37,8 +37,8 @@ Every layer is a suspect.
   output off the phone; a software renderer on the phone separates "the game is broken" from
   "the GPU path is broken".
 - **Build tools when the question needs one.** `diffgl3` (below) draws a game's real shader
-  through several drivers side by side and boxes every wrong pixel, so "does it look right" becomes a
-  number.
+  through several drivers side by side and boxes every wrong pixel, so "does it look right"
+  becomes a number.
 
 ## Mewgenics: from garbage to playable
 
@@ -65,8 +65,8 @@ the first patch (one of them an unpatched control) to:
 StS2 failed in a new way each time the previous failure was fixed: memory, runtime start-up,
 texture creation, a crash, a black window, a crash, a lost device. **Fourteen phone builds in one
 day**, many of them logging-only, each answering one question. The menu rendered on the ninth,
-and the game is playable on its Vulkan path. Its default D3D12 path and one device-lost are still open, and
-Winlator's own Test Direct3D shares the D3D12 failure:
+and the game is playable on its Vulkan path. Its default D3D12 path and one device-lost are still
+open, and Winlator's own Test Direct3D shares the D3D12 failure:
 
 ![Test Direct3D, object black](images/testd3d-object-black.png)
 

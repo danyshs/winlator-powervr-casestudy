@@ -1,0 +1,8 @@
+// any markdownlint finding is an error; lint with: bunx markdownlint-cli2 "**/*.md"
+{
+  "default": true,
+  // 100 columns, as in my other repos; tables and code keep their natural width
+  "MD013": { "line_length": 100, "tables": false, "code_blocks": false },
+  // the same heading under different parents is fine
+  "MD024": { "siblings_only": true }
+}
